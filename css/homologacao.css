@@ -1,0 +1,248 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+/* */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #101421;
+}
+
+.map-container {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #484e5c;
+  background: #363b47;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.map {
+  min-width: 570px;
+  min-height: 510px;
+  position: relative;
+  background-color: #101421;
+}
+
+.area {
+  position: absolute;
+  pointer-events: none;
+}
+
+.r8 {
+  left: 21.5%;
+  top: -1px;
+}
+
+.r7 {
+  top: 30px;
+  left: 20px;
+}
+
+.r6 {
+  top: 75px;
+  left: 162px;
+}
+
+.r5 {
+  top: 193px;
+  left: 202px;
+}
+
+.r4 {
+  top: 155px;
+  left: 0px;
+}
+
+.r3 {
+  top: 194px;
+  left: 144px;
+}
+
+.r2 {
+  top: 348px;
+  left: 52px;
+}
+
+.r1 {
+  top: 315px;
+  left: 217px;
+}
+
+.map svg path {
+  pointer-events: visiblePainted;
+  cursor: pointer;
+}
+
+.bg-map {
+  position: absolute;
+  z-index: 0;
+}
+
+.svg-area:hover {
+  fill: #101421;
+  stroke: #c4bfbf;
+  stroke-width: 1;
+  cursor: pointer;
+}
+.area {
+  z-index: 1;
+}
+
+.area text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: #b2cdec;
+}
+
+.font-map {
+  color: #b2cdec;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
